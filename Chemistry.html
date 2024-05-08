@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Chemistry Final</title>
+
+<link rel="stylesheet" href="Chemistry.css">
+
+
+</head>
+<body>
+
+<h1>Moles!</h1>
+
+<div>
+<img src="mole.png" alt="Big Mole">
+</div>
+
+<p><sup>
+This is not the kinda mole we mean.
+</sup></p>
+<br><br><br>
+<p>
+A mole is a unit of measurement, the base unit in the International System of Units for amount of substance, a quantity proportional to the number of elementary entities of a substance.
+</p>
+
+
+<br>
+<br>
+<br>
+<br>
+
+<h3>
+Moles to Atoms Formula
+</h3>
+
+
+<p>
+To calculate the number of atoms from moles, multiply the number of moles by 6.0221415*10^23
+</p>
+
+<br>
+<br>
+
+<h3>
+Atoms to Moles Formula
+</h3>
+
+
+<p>
+To calculate the number of moles from atoms, divide the number of atoms by 6.0221415*10^23
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<h3>
+Moles and Atoms Converter
+</h3>
+
+<div class="input">
+    <input type="number" id="inputMoles" placeholder="Moles" size="50" maxlength="31" oninput="maconverter(this.id, this.value)" onchange="maconverter(this.id, this.value)"> 
+</div>
+
+
+<div class="input">
+    <input type="number" id="inputAtoms" placeholder="Atoms" size="50" maxlength="31" oninput="maconverter(this.id, this.value)" onchange="maconverter(this.id, this.value)">
+</div>      
+
+
+
+<script>
+    function maconverter(source, val){
+        var inputMoles = document.getElementById('inputMoles');
+        var inputAtoms = document.getElementById('inputAtoms');
+        if(source == "inputMoles") {
+            inputAtoms.value = (val * (6.0221415 * Math.pow(10, 23)))
+        }
+        if(source == "inputAtoms") {
+            inputMoles.value = (val / (6.0221415 * Math.pow(10, 23)))
+        }
+        
+    }
+</script>
+
+
+</body>
+</html>

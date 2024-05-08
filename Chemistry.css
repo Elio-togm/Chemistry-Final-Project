@@ -1,0 +1,18 @@
+body {
+	background-color: rgb(225,225,225)
+}
+
+h1, h3 {
+	text-align: center;
+	margin: 70px;
+}
+
+div, p {
+	text-align: center;
+}
+
+input[type="number"] {
+    text-align: center;
+    width: 250px;
+    
+}
